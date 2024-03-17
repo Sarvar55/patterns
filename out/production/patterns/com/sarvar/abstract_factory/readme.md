@@ -1,8 +1,11 @@
 # What is difference between The factory pattern and Abstract Factory Patter
+
 ### Factory Method Pattern
-Bu desen, bir sınıfın alt sınıflarına nesne oluşturma sorumluluğunu devretme amacını taşır.
-Yani bir sınıf, nesnesini oluşturmak istediğinde, bunu alt sınıflarına bırakır.
-Örneğin, bir belge oluşturma uygulamasında, farklı belge türlerini oluşturmak için bir arayüz tanımlayabilir ve alt sınıfları bu arayüzü uygulayarak kendi belgelerini oluşturabilir.
+
+Bu desen, bir sınıfın alt sınıflarına nesne oluşturma sorumluluğunu devretme amacını taşır. Yani bir sınıf, nesnesini
+oluşturmak istediğinde, bunu alt sınıflarına bırakır. Örneğin, bir belge oluşturma uygulamasında, farklı belge türlerini
+oluşturmak için bir arayüz tanımlayabilir ve alt sınıfları bu arayüzü uygulayarak kendi belgelerini oluşturabilir.
+
 ````java
 interface Document {
     void create();
@@ -48,7 +51,4 @@ public class Main {
     }
 }
 ````
-Abstract Factory Pattern:
-Bu desen, bir nesne ailesini oluşturmak için kullanılır.
-Yani birden fazla birbirine bağımlı nesneyi bir arada oluşturmanın bir yolunu sağlar. 
 
