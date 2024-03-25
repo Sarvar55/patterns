@@ -6,11 +6,11 @@ objects that are being cloned.
 The Prototype pattern is a desing pattern used in software development to create new objects by copying an existing
 object, known as the prototype.
 
-Instead of creating new objects from scratch(baştan) the Prototype pattern allows us to clone existing objects and
+Instead of creating new objects from scratch (baştan) the Prototype pattern allows us to clone existing objects and
 modify them as needed.
 
-- **Reducing object creation overhead**: Sometime, creating an object from scratch can be expensive in terms of time and
-  resources. By using the Prototype pattern , we can avoid this overhead by cloning an existing object.
+- **Reducing object creation overhead**: Sometimes, creating an object from scratch can be expensive in (terms of time)(zaman açısından) and
+  resources. By using the Prototype pattern, we can avoid this overhead by cloning an existing object.
 - **Customizing object creation**: The Prototype pattern allows us to create new objects that are similar to existing
   ones(olanlar)
   but with slight(hafif,biraz) differences. This can be useful when we need to create multiple objects with similar
@@ -30,7 +30,7 @@ standard resume template and customize it for each job seeker.
 
 ### Explanation and code Implementation:
 
-````java
+```java
 public class Resume implements Cloneable {
     private String name;
     private String email;
@@ -88,12 +88,11 @@ public class Main {
         }
     }
 }
-````
+```
 
 ### What is difference between shallow and deep copy?
 
-Shallow copy duplicates only the references to objects, while deep copy duplicates both the objects and all of their
-nested objects recursivelly.
+Shallow copy duplicates only the references to objects, while deep copy duplicates both the objects and all of their nested objects recursively.
 
 !!As a result, changes made to the objects referenced by the copied object will affect the original object and vice
 versa.
