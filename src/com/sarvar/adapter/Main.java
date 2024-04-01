@@ -9,8 +9,10 @@ public class Main {
         transaction.setFromIban("1");
         transaction.setToIban("10");
 
-        JSONBankAPIAdapter adapter = new JSONBankAPIAdapter();
+        IBankAPI adapter = new JSONBankAPIAdapter();
         adapter.executeTransaction(transaction);
+
+        IBankAPI bankAPI = new XMLBankAPIAdapter();
 
     }
 
